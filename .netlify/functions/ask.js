@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 
 exports.handler = async function(event, context) {
     const { question } = JSON.parse(event.body);
-    const apiKey = process.env.OPENAI_API;  // Make sure this matches your secret name
+    const apiKey = process.env.OPENAI_API_KEY;  // Make sure this matches your secret name
 
     try {
         const response = await fetch('https://api.openai.com/v1/engines/gpt-4/completions', {
