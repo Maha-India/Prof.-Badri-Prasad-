@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prof. Badri Prasad - GPT-Based Scientific Assistant</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Prof. Badri Prasad - GPT-Based Scientific Assistant</h1>
-    <div id="chat">
-        <textarea id="input" placeholder="Type your message..."></textarea>
-        <button id="send">Send</button>
-        <div id="response"></div>
-    </div>
-    <script src="app.js"></script>
+    <header>
+        <h1>Prof. Badri Prasad</h1>
+        <p>A GPT-Based Scientific Assistant</p>
+    </header>
+    <main>
+        <form id="query-form">
+            <textarea id="question" placeholder="Ask a question..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="response">
+            <p>Response will appear here...</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
