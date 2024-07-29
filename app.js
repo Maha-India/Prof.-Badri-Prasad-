@@ -1,6 +1,6 @@
 import { HfInference } from '@huggingface/inference';
 
-const hf = new HfInference('<YOUR_HUGGING_FACE_API_KEY>');
+const hf = new HfInference('Xenova/gpt-4o');
 
 document.getElementById('send').addEventListener('click', async () => {
     const inputText = document.getElementById('input').value;
